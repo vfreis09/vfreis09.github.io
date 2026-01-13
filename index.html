@@ -3,36 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Vicente Fernandes | Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">MyBrand</div>
+        <a href="#" class="logo">Vicente Fernandes</a>
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="social-icons">
+            <a
+              href="https://github.com/vfreis09"
+              target="_blank"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vicente-fernandes-339005155/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section id="hero">
-      <h1>Hi, I'm [Your Name]</h1>
-      <p>A passionate developer creating cool things.</p>
-    </section>
+    <main>
+      <section id="hero">
+        <span class="hero-intro">Hi, I'm Vicente Fernandes</span>
+        <h1>Software Engineer</h1>
+        <p class="hero-description">
+          Self-taught Full Stack Developer since 2021 specializing in end-to-end
+          web applications, robust backend logic, and building clean, functional
+          user interfaces.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="cta-button"
+            >View My Work <i class="fa-solid fa-arrow-down"></i
+          ></a>
+          <a
+            href="https://github.com/vfreis09"
+            target="_blank"
+            class="secondary-btn"
+          >
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vicente-fernandes-339005155/"
+            target="_blank"
+            class="secondary-btn"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </section>
 
-    <section id="projects">
-      <h2>My Work</h2>
-      <div class="project-grid">
-        <div class="project-card">Project 1</div>
-        <div class="project-card">Project 2</div>
-      </div>
-    </section>
+      <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a developer focused on efficiency and elegant system design...
+        </p>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+          <span>Git</span>
+        </div>
+      </section>
+
+      <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="exp-item">
+          <h3>Software Engineer</h3>
+          <p>Company Name | 2024 - Present</p>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Project Name</h3>
+          <p>
+            A deep dive into my primary project. Built with focus on
+            performance.
+          </p>
+          <a href="#" class="project-link">View Repo →</a>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <p>I'm currently looking for new opportunities.</p>
+        <a href="mailto:your@email.com" class="email-link">your@email.com</a>
+      </section>
+    </main>
 
     <footer>
-      <p>© 2026 [Your Name]. All rights reserved.</p>
+      <p>© 2026 Vicente Fernandes</p>
     </footer>
   </body>
 </html>
