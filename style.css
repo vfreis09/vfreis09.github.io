@@ -20,7 +20,6 @@ body {
   line-height: 1.6;
 }
 
-/* --- Navigation --- */
 header {
   position: sticky;
   top: 0;
@@ -92,7 +91,6 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* --- Hero Section --- */
 #hero {
   height: 90vh;
   display: flex;
@@ -116,8 +114,8 @@ h1 {
   margin: 0;
   letter-spacing: -3px;
   background: var(--accent-gradient);
-  -webkit-background-clip: text; /* Vendor prefix */
-  background-clip: text; /* Standard property - ADD THIS LINE */
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
   padding-bottom: 0.1em;
@@ -128,13 +126,12 @@ h1 {
   color: var(--text-dim);
   font-size: clamp(1rem, 2.2vw, 1.2rem);
   max-width: 620px;
-  margin-top: 1.2rem; /* Adjusted slightly for the new h1 padding */
+  margin-top: 1.2rem;
   margin-bottom: 0;
   font-weight: 400;
   line-height: 1.6;
 }
 
-/* BUTTONS */
 .hero-btns {
   display: flex;
   gap: 12px;
@@ -182,16 +179,16 @@ h1 {
   filter: brightness(1.1);
 }
 
-/* --- Content Sections --- */
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 100px 20px;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
   position: relative;
   display: inline-block;
 }
@@ -199,23 +196,131 @@ h2 {
 h2::after {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: 0;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50px;
   height: 4px;
   background: var(--accent-gradient);
   border-radius: 2px;
 }
 
-.skills-list span {
-  display: inline-block;
+.section-subtext {
+  color: var(--text-dim);
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 32px;
+  margin-top: 2rem;
+}
+
+.skill-card {
   background: var(--card-bg);
-  padding: 8px 18px;
-  border-radius: 8px;
-  margin: 6px;
   border: 1px solid var(--border);
-  font-size: 0.9rem;
+  border-radius: 16px;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card i,
+.skill-card .icon-img {
+  font-size: 2.8rem;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+}
+
+.skill-card span {
+  font-weight: 600;
+  font-size: 1rem;
   color: var(--text-main);
+  letter-spacing: 0.5px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-card:hover i,
+.skill-card:hover .icon-img {
+  transform: scale(1.15);
+}
+
+.skill-card.ts {
+  border-bottom: 2px solid #3178c6;
+}
+.skill-card.node {
+  border-bottom: 2px solid #68a063;
+}
+.skill-card.golang {
+  border-bottom: 2px solid #00add8;
+}
+.skill-card.python {
+  border-bottom: 2px solid #3776ab;
+}
+.skill-card.react {
+  border-bottom: 2px solid #61dbfb;
+}
+.skill-card.css {
+  border-bottom: 2px solid #264de4;
+}
+.skill-card.postgres {
+  border-bottom: 2px solid #336791;
+}
+.skill-card.sql {
+  border-bottom: 2px solid #f29111;
+}
+.skill-card.docker {
+  border-bottom: 2px solid #2496ed;
+}
+.skill-card.git {
+  border-bottom: 2px solid #f05032;
+}
+
+.skill-card.ts:hover {
+  box-shadow: 0 15px 35px -10px rgba(49, 120, 198, 0.25);
+}
+.skill-card.node:hover {
+  box-shadow: 0 15px 35px -10px rgba(104, 160, 99, 0.25);
+}
+.skill-card.golang:hover {
+  box-shadow: 0 15px 35px -10px rgba(0, 173, 216, 0.25);
+}
+.skill-card.python:hover {
+  box-shadow: 0 15px 35px -10px rgba(55, 118, 171, 0.25);
+}
+.skill-card.react:hover {
+  box-shadow: 0 15px 35px -10px rgba(97, 219, 251, 0.25);
+}
+.skill-card.css:hover {
+  box-shadow: 0 15px 35px -10px rgba(38, 77, 228, 0.25);
+}
+.skill-card.postgres:hover {
+  box-shadow: 0 15px 35px -10px rgba(51, 103, 145, 0.25);
+}
+.skill-card.sql:hover {
+  box-shadow: 0 15px 35px -10px rgba(242, 145, 17, 0.25);
+}
+.skill-card.docker:hover {
+  box-shadow: 0 15px 35px -10px rgba(36, 150, 237, 0.25);
+}
+.skill-card.git:hover {
+  box-shadow: 0 15px 35px -10px rgba(240, 80, 50, 0.25);
 }
 
 .project-card {
@@ -224,6 +329,7 @@ h2::after {
   border: 1px solid var(--border);
   border-radius: 20px;
   transition: transform 0.3s;
+  text-align: left;
 }
 
 .project-card:hover {
