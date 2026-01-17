@@ -27,8 +27,8 @@ You can view the live site here: [https://vfreis09.github.io](https://vfreis09.g
 
 ## ✍️ Author
 
-[Your Name]
+    Vicente Fernandes
 
-    LinkedIn: @YourProfile
+    LinkedIn: https://www.linkedin.com/in/vicente-fernandes-339005155/
 
 ```
