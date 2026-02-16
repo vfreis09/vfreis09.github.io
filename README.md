@@ -29,6 +29,6 @@ You can view the live site here: [https://vfreis09.github.io](https://vfreis09.g
 
     Vicente Fernandes
 
-    LinkedIn: https://www.linkedin.com/in/vicente-fernandes-339005155/
+    LinkedIn: [https://www.linkedin.com/in/vicente-fernandes-339005155/](https://www.linkedin.com/in/vicente-fernandes-339005155/)
 
 ```

@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Vicente Fernandes | Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -17,32 +20,32 @@
   <body>
     <header>
       <nav>
-        <a href="#" class="logo">Vicente Fernandes</a>
-        <ul>
+        <div class="nav-header">
+          <a href="#" class="logo">Vicente Fernandes</a>
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="social-icons">
-            <a
-              href="https://github.com/vfreis09"
-              target="_blank"
-              title="GitHub"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <a href="https://github.com/vfreis09" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
             <a
               href="https://www.linkedin.com/in/vicente-fernandes-339005155/"
               target="_blank"
-              title="LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </li>
         </ul>
       </nav>
     </header>
+    <div class="mobile-overlay"></div>
     <main>
       <section id="hero">
         <span class="hero-intro">Hi, I'm Vicente Fernandes</span>
@@ -392,5 +395,6 @@
         <p>© 2026 Vicente Fernandes. All rights reserved.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
