@@ -22,16 +22,21 @@
       <nav>
         <div class="nav-header">
           <a href="#" class="logo">Vicente Fernandes</a>
-          <button class="menu-toggle" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+          <div class="header-actions">
+            <button id="lang-toggle" class="lang-btn">
+              <i class="fa-solid fa-globe"></i> <span>PT</span>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-key="nav_about">About</a></li>
+          <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+          <li><a href="#experience" data-key="nav_exp">Experience</a></li>
+          <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+          <li><a href="#contact" data-key="nav_contact">Contact</a></li>
           <li class="social-icons">
             <a href="https://github.com/vfreis09" target="_blank"
               ><i class="fa-brands fa-github"></i
@@ -48,15 +53,17 @@
     <div class="mobile-overlay"></div>
     <main>
       <section id="hero">
-        <span class="hero-intro">Hi, I'm Vicente Fernandes</span>
-        <h1>Software Engineer</h1>
-        <p class="hero-description">
+        <span class="hero-intro" data-key="hero_intro"
+          >Hi, I'm Vicente Fernandes</span
+        >
+        <h1 data-key="hero_title">Software Engineer</h1>
+        <p class="hero-description" data-key="hero_desc">
           Self-taught Full Stack Developer since 2021 specializing in end-to-end
           web applications, robust backend logic, and building clean, functional
           user interfaces.
         </p>
         <div class="hero-btns">
-          <a href="#projects" class="cta-button">
+          <a href="#projects" class="cta-button" data-key="hero_cta">
             View My Work <i class="fa-solid fa-arrow-down"></i>
           </a>
           <a
@@ -76,8 +83,8 @@
         </div>
       </section>
       <section id="about" class="container">
-        <h2>About Me</h2>
-        <p class="section-subtext">
+        <h2 data-key="about_title">About Me</h2>
+        <p class="section-subtext" data-key="about_subtitle">
           Building high-performance software through self-driven learning.
         </p>
         <div class="about-flex">
@@ -86,21 +93,21 @@
           </div>
           <div class="about-content">
             <div class="about-bio">
-              <p>
+              <p data-key="about_p1">
                 <strong>👨‍💻 Background:</strong> I am a self-taught Software
                 Engineer driven by a deep curiosity for how systems work. Since
                 2021, I have dedicated my time to mastering full-stack
                 development, moving from building simple interfaces to designing
                 robust backend logic.
               </p>
-              <p>
+              <p data-key="about_p2">
                 <strong>🎯 Current Focus:</strong> I am currently exploring the
                 depths of web development and systems programming. I am looking
                 to apply my skills in a professional environment—whether that is
                 through freelance partnerships or joining a company where I can
                 contribute to meaningful projects.
               </p>
-              <p>
+              <p data-key="about_p3">
                 <strong>🤝 Work Philosophy:</strong> I operate with a
                 "solve-first" mentality. I enjoy the process of deep research
                 and troubleshooting to find solutions, and I value a workspace
@@ -112,8 +119,8 @@
         </div>
       </section>
       <section id="skills" class="container">
-        <h2>Skills & Expertise</h2>
-        <p class="section-subtext">
+        <h2 data-key="skills_title">Skills & Expertise</h2>
+        <p class="section-subtext" data-key="skills_subtitle">
           Technologies i have experience with and use the most.
         </p>
         <div class="skills-grid">
@@ -176,34 +183,34 @@
         </div>
       </section>
       <section id="experience" class="container">
-        <h2>Experience</h2>
+        <h2 data-key="exp_title">Experience</h2>
         <div class="exp-grid">
           <div class="exp-card">
             <div class="exp-header">
-              <h3>Professional Work History</h3>
+              <h3 data-key="exp_card_title">Professional Work History</h3>
               <span>2021 — 2026</span>
             </div>
-            <p class="exp-special-note">
+            <p class="exp-special-note" data-key="exp_note">
               Focused on public-facing roles and team collaboration in
               high-pressure environments.
             </p>
             <ul class="exp-list">
-              <li>
+              <li data-key="exp_l1">
                 <strong>Reliability:</strong> Maintained a 100% attendance
                 record over 1.5 years, demonstrating consistent discipline and
                 professional commitment.
               </li>
-              <li>
+              <li data-key="exp_l2">
                 <strong>Proactive Mentality:</strong> Applied a "solve-first"
                 approach to operational challenges, handling issues
                 independently while keeping leadership informed of progress.
               </li>
-              <li>
+              <li data-key="exp_l3">
                 <strong>Team Coordination:</strong> Gained experience leading
                 small groups and training new staff members to maintain service
                 standards and efficiency.
               </li>
-              <li>
+              <li data-key="exp_l4">
                 <strong>Professionalism:</strong> Highly focused on maintaining
                 a productive, ego-free work environment and quickly adapting to
                 new team workflows.
@@ -213,23 +220,33 @@
         </div>
       </section>
       <section id="projects" class="container">
-        <h2>Projects</h2>
-        <p class="section-subtext">Selected work and personal projects.</p>
+        <h2 data-key="proj_title">Projects</h2>
+        <p class="section-subtext" data-key="proj_subtitle">
+          Selected work and personal projects.
+        </p>
         <div class="project-display">
           <div class="project-info">
-            <h3>Nexevent</h3>
-            <p>
+            <h3>NexEvent</h3>
+            <p data-key="nex_desc">
               A comprehensive event management platform designed to streamline
               the planning and attendance experience. Built with a focus on
               real-time updates and high-concurrency handling.
             </p>
             <div class="project-features">
-              <h4>Key Features</h4>
+              <h4 data-key="proj_features_label">Key Features</h4>
               <ul>
-                <li>Real-time event tracking and notifications</li>
-                <li>User authentication and profile management</li>
-                <li>Interactive event scheduling and RSVPs</li>
-                <li>Seamless backend integration with PostgreSQL</li>
+                <li data-key="nex_f1">
+                  Real-time event tracking and notifications
+                </li>
+                <li data-key="nex_f2">
+                  User authentication and profile management
+                </li>
+                <li data-key="nex_f3">
+                  Interactive event scheduling and RSVPs
+                </li>
+                <li data-key="nex_f4">
+                  Seamless backend integration with PostgreSQL
+                </li>
               </ul>
             </div>
             <div class="project-tags">
@@ -244,6 +261,7 @@
                 href="https://github.com/vfreis09/NexEvent"
                 target="_blank"
                 class="project-btn"
+                data-key="proj_view_code"
               >
                 <i class="fa-brands fa-github"></i> View Code
               </a>
@@ -258,18 +276,26 @@
         </div>
         <div class="project-display coming-soon">
           <div class="project-info">
-            <div class="status-badge">Under Development</div>
-            <h3>IronPulse Gym Manager</h3>
-            <p>
+            <div class="status-badge" data-key="proj_status_dev">
+              Under Development
+            </div>
+            <h3>Gym Manager</h3>
+            <p data-key="iron_desc">
               An all-in-one SaaS dashboard for gym owners to manage memberships,
               track athlete performance, and automate billing cycles.
             </p>
             <div class="project-features">
-              <h4>Planned Features</h4>
+              <h4 data-key="proj_planned_label">Planned Features</h4>
               <ul>
-                <li>Automated membership renewal & QR check-ins</li>
-                <li>Financial analytics dashboard with Go backend</li>
-                <li>Personal trainer scheduling & workout builder</li>
+                <li data-key="iron_f1">
+                  Automated membership renewal & QR check-ins
+                </li>
+                <li data-key="iron_f2">
+                  Financial analytics dashboard with Go backend
+                </li>
+                <li data-key="iron_f3">
+                  Personal trainer scheduling & workout builder
+                </li>
               </ul>
             </div>
             <div class="project-tags">
@@ -282,7 +308,7 @@
           <div class="project-visual">
             <div class="visual-placeholder">
               <i class="fa-solid fa-dumbbell pulse-icon"></i>
-              <span>Development in Progress</span>
+              <span data-key="proj_in_progress">Development in Progress</span>
             </div>
           </div>
         </div>
@@ -291,14 +317,15 @@
             href="https://github.com/vfreis09?tab=repositories"
             target="_blank"
             class="secondary-btn github-cta"
+            data-key="proj_more"
           >
             View More on GitHub <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </section>
       <section id="contact" class="container">
-        <h2>Get In Touch</h2>
-        <p class="section-subtext">
+        <h2 data-key="contact_title">Get In Touch</h2>
+        <p class="section-subtext" data-key="contact_subtitle">
           I’m open to new opportunities and collaborations.
         </p>
         <div class="contact-list">
@@ -307,7 +334,7 @@
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="contact-info">
-              <span>Email</span>
+              <span data-key="contact_email">Email</span>
               <strong>reis.vicente27@gmail.com</strong>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square external-link"></i>
@@ -345,8 +372,10 @@
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <div class="contact-info">
-              <span>Location</span>
-              <strong>Rio Grande do Sul, Brazil (BRT)</strong>
+              <span data-key="contact_loc_label">Location</span>
+              <strong data-key="contact_loc_val"
+                >Rio Grande do Sul, Brazil (BRT)</strong
+              >
             </div>
           </div>
         </div>
@@ -356,43 +385,42 @@
       <div class="footer-container">
         <div class="footer-left">
           <div class="footer-logo">Vicente Fernandes</div>
-          <p class="footer-tagline">Software Engineer</p>
+          <p class="footer-tagline" data-key="footer_tagline">
+            Software Engineer
+          </p>
         </div>
-        <div class="footer-right">
-          <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Connect</h4>
-            <div class="footer-socials">
-              <a
-                href="https://github.com/vfreis09"
-                target="_blank"
-                title="GitHub"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/vicente-fernandes-339005155/"
-                target="_blank"
-                title="LinkedIn"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="mailto:reis.vicente27@gmail.com" title="Email"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </div>
+        <div class="footer-column">
+          <h4 data-key="footer_links_title">Quick Links</h4>
+          <ul>
+            <li><a href="#about" data-key="nav_about">About</a></li>
+            <li><a href="#skills" data-key="nav_skills">Skills</a></li>
+            <li><a href="#experience" data-key="nav_exp">Experience</a></li>
+            <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+            <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 data-key="footer_connect_title">Connect</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/vfreis09" target="_blank" title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/vicente-fernandes-339005155/"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:reis.vicente27@gmail.com" title="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Vicente Fernandes. All rights reserved.</p>
+        <p data-key="footer_copy">
+          © 2026 Vicente Fernandes. All rights reserved.
+        </p>
       </div>
     </footer>
     <script src="script.js"></script>
