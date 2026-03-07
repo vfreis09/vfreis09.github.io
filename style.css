@@ -953,4 +953,28 @@ footer {
   .footer-socials {
     justify-content: center;
   }
+
+  .project-actions {
+    flex-direction: row;
+  }
+
+  .project-actions .cta-button,
+  .project-actions .project-btn {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.project-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title-link:hover {
+  color: var(--accent-solid);
 }
