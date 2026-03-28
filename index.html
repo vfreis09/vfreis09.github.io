@@ -290,39 +290,53 @@
         </div>
         <div class="project-display coming-soon">
           <div class="project-info">
-            <div class="status-badge" data-key="proj_status_dev">
-              Under Development
-            </div>
-            <h3>Gym Manager</h3>
-            <p data-key="iron_desc">
-              An all-in-one SaaS dashboard for gym owners to manage memberships,
-              track athlete performance, and automate billing cycles.
+            <span class="status-badge" data-key="proj_in_progress"
+              >Development in Progress</span
+            >
+            <h3>Inkspace</h3>
+            <p data-key="ink_desc">
+              A production-grade collaborative canvas application where multiple
+              users can draw, design, and brainstorm together in real-time.
             </p>
             <div class="project-features">
-              <h4 data-key="proj_planned_label">Planned Features</h4>
+              <h4 data-key="proj_features_label">Key Features</h4>
               <ul>
-                <li data-key="iron_f1">
-                  Automated membership renewal & QR check-ins
+                <li data-key="ink_f1">
+                  Infinite canvas with real-time multiplayer sync
                 </li>
-                <li data-key="iron_f2">
-                  Financial analytics dashboard with Go backend
+                <li data-key="ink_f2">
+                  Live cursors and presence indicators via Partykit
                 </li>
-                <li data-key="iron_f3">
-                  Personal trainer scheduling & workout builder
+                <li data-key="ink_f3">
+                  Conflict-free data synchronization using CRDTs (Yjs)
+                </li>
+                <li data-key="ink_f4">
+                  Modern stack with Next.js 15 and React Compiler
                 </li>
               </ul>
             </div>
             <div class="project-tags">
-              <span class="tag">Go</span>
+              <span class="tag">Next.js 15</span>
+              <span class="tag">Partykit</span>
+              <span class="tag">Tldraw</span>
+              <span class="tag">TypeScript</span>
               <span class="tag">PostgreSQL</span>
-              <span class="tag">React</span>
-              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-actions">
+              <a
+                href="https://github.com/vfreis09/inkspace"
+                target="_blank"
+                class="project-btn"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span data-key="proj_view_code">View Code</span>
+              </a>
             </div>
           </div>
           <div class="project-visual">
             <div class="visual-placeholder">
-              <i class="fa-solid fa-dumbbell pulse-icon"></i>
-              <span data-key="proj_in_progress">Development in Progress</span>
+              <i class="fa-solid fa-palette pulse-icon"></i>
+              <span data-key="proj_status_dev">Under Development</span>
             </div>
           </div>
         </div>
